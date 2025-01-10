@@ -1,4 +1,14 @@
-h{
+h1{
+    padding: 20px;
+    background: skyblue;
+}
+
+h2{
+    padding: 20px;
+    background: skyblue;
+}
+
+h3{
     padding: 20px;
     background: skyblue;
 }
