@@ -18,11 +18,12 @@ body {
 
 .profile {
   max-width: 1600px;
-  color:#006f94;
   margin: auto;
   padding: 40px;
   background: rgba(3, 0, 50, 0.65);
+  color:#006f94;
   border-radius: 10px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
 }
 
 .profile img {
