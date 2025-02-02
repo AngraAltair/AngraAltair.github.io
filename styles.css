@@ -20,8 +20,8 @@ body {
   max-width: 1600px;
   margin: auto;
   padding: 40px;
-  background: rgba(255, 255, 255, 0.2);
-  color: #006f94;
+  background: rgba(0,0,0 0.2);
+  color: #4eb9fc;
   border-radius: 10px;
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
 }
@@ -37,7 +37,7 @@ h1 {
   font-size: 28px;
   margin-bottom: 10px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  color: #006f94;
+  color: #4eb9fc;;
 }
 
 #greeting {
