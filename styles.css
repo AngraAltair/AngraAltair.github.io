@@ -4,7 +4,7 @@ body {
   background-size: cover;
   color: rgb(61, 92, 134);
   font-family: Arial, sans-serif;
-  text-align: center;
+  text-align: left;
   margin: 0;
   padding: 0;
 }
@@ -19,7 +19,6 @@ body {
 header h1 {
   font-size: 28px;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0);
 }
 
 .task-section {
