@@ -46,14 +46,14 @@ li {
 
 a {
   text-decoration: none;
-  color: rgb(29, 30, 130);
+  color: #4eb9fc;
   font-size: 18px;
   font-weight: bold;
   transition: 0.3s;
 }
 
 a:hover {
-  color: #4eb9fc;
+  color: #bbe0f7;
   text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.6);
 }
 
