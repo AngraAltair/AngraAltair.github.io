@@ -20,7 +20,7 @@ body {
   max-width: 1600px;
   margin: auto;
   padding: 40px;
-  background: rgba(0,0,0 0.2);
+  background: rgba(0, 0, 0, 0.3);
   color: #4eb9fc;
   border-radius: 10px;
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
