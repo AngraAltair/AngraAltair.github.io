@@ -41,6 +41,10 @@ h1 {
   color: #4eb9fc;;
 }
 
+h2 {
+  text-align: left;
+}
+
 #greeting {
   font-size: 22px;
   margin-top: 10px;
