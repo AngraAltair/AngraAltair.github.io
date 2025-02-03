@@ -60,6 +60,15 @@ h2 {
   box-sizing: border-box;
 }
 
+.task2 {
+  background: rgba(0, 25, 45, 0.4);
+  padding: 15px;
+  margin: -10px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
   color: #4eb9fc;
