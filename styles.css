@@ -67,7 +67,7 @@ h2 {
 .task2 {
   background: rgba(0, 25, 45, 0.4);
   padding: 15px;
-  margin: 120px;
+  margin: 180px;
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
   width: 80%;
   box-sizing: border-box;
@@ -86,6 +86,14 @@ a:hover {
   text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.6);
 }
 
+.ftr{
+  background: rgba(0, 25, 45, 0.4);
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  box-sizing: border-box;
+}
 footer {
   margin-top: 20px;
   font-size: 14px;
