@@ -1,4 +1,4 @@
-const jsonObject = { name: "Gojo", age: 28, city: "Kyoto" };
+const jsonObject = { name: "Gojo", age: 28, hobbies: "Eating Takoyaki" };
 
 const jsonString = JSON.stringify(jsonObject);
 
