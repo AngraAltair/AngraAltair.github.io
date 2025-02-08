@@ -20,11 +20,16 @@
                 
                 // Display user data on the page
                 userDataDiv.innerHTML = `
-                    <p>Name: ${user.name.last}, ${user.name.first}</p>
+                    <p>Name:  ${user.name.title}= ${user.name.last}, ${user.name.first}</p>
                     <p>Email: ${user.email}</p>
                     <p>Gender: ${user.gender}</p>
-                    <p>Street: ${user.street}</p>
-                    <p>Country: ${user.country}</p>
+                    <p>Location: ${user.location.street}</p>
+                    <br>
+                    <p>${user.location.number}</p>
+                    <br>
+                    <p>${user.location.state}</p>
+                    <br>
+                    <p>${user.location.state}</p>
                     <img src="${user.picture.large}" alt="User Image">
                 `;
             })
