@@ -1,0 +1,26 @@
+body {
+    background: url("wallpepa.jpg") no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+h1 {
+    background-color: rgb(107, 142, 255, 0.5);
+    color:rgba(0, 0, 255);
+    margin:auto;
+    width: 300px;
+    border: 1px solid;
+    align-self: auto;
+    font-style: italic;
+}
+
+#jokeDisplay{
+    background-color: rgb(107, 142, 255, 0.5);
+    color:rgba(0, 0, 255);
+    border: 1px solid;
+    font-size: 40px;
+    font-style: italic;
+    padding-left: 40px;
+    align-self: auto;
+    
+}
