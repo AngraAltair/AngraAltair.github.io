@@ -153,7 +153,6 @@ summary:hover {
   background: rgba(0, 25, 45, 0.8);
 }
 
-/* Ensure images inside the dropdown are styled properly */
 details img {
   max-width: 100%;
   height: auto;
