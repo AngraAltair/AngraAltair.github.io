@@ -80,11 +80,10 @@ h2 {
 .task3 {
   background: rgba(0, 25, 45, 0.6);
   padding: 15px;
-  margin: 30px;
-  margin-left: 290px;
+  margin: 10px;
   font-size: 30px;
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
-  width: 90%;
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -101,7 +100,7 @@ a:hover {
   text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.6);
 }
 
-.ftr{
+.ftr {
   background: rgba(0, 25, 45, 0.4);
   padding: 15px;
   margin: auto;
@@ -109,8 +108,57 @@ a:hover {
   width: 80%;
   box-sizing: border-box;
 }
+
 footer {
   margin-top: 20px;
   font-size: 14px;
   opacity: 0.8;
+}
+
+/* Image styling for task sections */
+.task img, .task2 img, .task3 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Specific styling for images in the task3 section */
+.task3 img {
+  max-width: 90%;
+}
+
+/* Styling for the details/summary dropdown */
+details {
+  margin: 10px 0;
+  padding: 10px;
+  background: rgba(0, 25, 45, 0.6);
+  border-radius: 8px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+summary {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4eb9fc;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+summary:hover {
+  background: rgba(0, 25, 45, 0.8);
+}
+
+/* Ensure images inside the dropdown are styled properly */
+details img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
