@@ -4,128 +4,173 @@
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Sherwin Tarquini | Portfolio</title>
 </head>
 <body>
-    <div class="front">
-        <img src="myFace.jpg" alt="Sherwin John V. Tarquini">
-        <br>
-        <h1>Hi! I am Sherwin John V. Tarquini</h1>
-        <h3 id="greeting"></h3>
-    </div>
-    <div class="main">
 
-        <section class="task">
-            <h2>HTML Tasks</h2>
-            <ul>
-                <li><a href="https://AngraAltair.github.io/Tarquini_A224_HTML_Tours/TarquiniExploreNatureTours.html">Explore PH Tours</a></li>
-                <li><a href="https://AngraAltair.github.io/Tarquini_A224_HTML_Schedule/TarquiniCourseSchedule.html">2nd Term Course Schedule</a></li>
-            </ul>
-        </section>
-        <section class="task2">
-            <h2 class="ht2">CSS Tasks</h2>
-            <ul>
-                <li><a href="Tarquini_W5_CSS_Act1/index.html">Tarquini_W5_CSS_Act1</a></li>
-                <li><a href="Tarquini_W5_CSS_Act2/index.html">Tarquini_W5_CSS_Act2</a></li>
-            </ul>
-        </section>
+    <!-- Main Container matching Raphael's centered page constraint -->
+    <div class="portfolio-container">
+        
+        <!-- HEADER / HERO SECTION -->
+        <header class="hero-section">
+            <h1 class="welcome-msg">Hello World, and welcome to my portfolio!</h1>
+            <h3 id="greeting"></h3>
+            
+            <div class="profile-container">
+                <div class="profile-left">
+                    <img src="myFace.jpg" alt="Sherwin John V. Tarquini" class="profile-img">
+                </div>
+                <div class="profile-right">
+                    <p>I am <strong>Sherwin John V. Tarquini</strong>, a multimedia generalist with a diverse set of skills. I mainly excel in game development and game design, bringing creative concepts to life across multiple stages of production.</p>
+                    
+                    <h4>Tools I Use:</h4>
+                    <div class="tech-grid">
+                        <span class="tech-badge">Unity</span>
+                        <span class="tech-badge">Unreal Engine</span>
+                        <span class="tech-badge">Blender</span>
+                        <span class="tech-badge">Photoshop</span>
+                        <span class="tech-badge">FL Studio</span>
+                    </div>
 
-        <section class="task">
-            <h2>JS Tasks</h2>
-            <ul>
-                <li><a href="Tarquini_A224_JS_Act01/index.html">TARQUINI_JS_Act01</a></li>
-                <li><a href="Tarquini_A224_JS_Act02/index.html">TARQUINI_JS_Act02</a></li>
-            </ul>
-        </section>
+                    <h4>Programming Languages:</h4>
+                    <div class="tech-grid">
+                        <span class="lang-badge">C#</span>
+                        <span class="lang-badge">Java</span>
+                        <span class="lang-badge">Python</span>
+                        <span class="lang-badge">HTML</span>
+                        <span class="lang-badge">CSS</span>
+                        <span class="lang-badge">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-        <section class="task2">
-            <h2 class="ht2">W8 HandsOn</h2>
-            <ul>
-                <li><a href="https://angraaltair.github.io/Module2/Tarquini_Exercise_1/index.html">1. Introduction to the DOM</a></li>
-                <li><a href="https://angraaltair.github.io/Module2/Tarquini_Exercise_2/index.html">2. Understanding JSON</a></li>    
-                <li><a href="https://angraaltair.github.io/Module2/Tarquini_Exercise_3/index.html">3. Fetch API to Make GET Requests</a></li>
-                <li><a href="https://angraaltair.github.io/Module2/Tarquini_Exercise_4/index.html">4. Making an API GET Request</a></li>    
-                <li><a href="https://angraaltair.github.io/Module2/Tarquini_Exercise_5/index.html">5. Build a Simple Web App</a></li>
-                <li><a href="https://angraaltair.github.io/Module2/Tarquini_HandsOn/index.html">Hands-on Activity</a></li>    
-            </ul>
-        </section>
-
-
-        <section class="task">
-            <h2>Javascripting</h2>
-            <ul>
-                <li><a href="https://github.com/AngraAltair/M2_Tarquini_Javascripting">M2_Tarquini_Javascripting</a></li>
-            </ul>
+        <!-- ACADEMICS SECTION -->
+        <section class="academics-section">
+            <div class="academics-text">
+                <h2>My Academics</h2>
+                <p>I am currently pursuing a <strong>Bachelor of Science in Entertainment and Multimedia Computing</strong> at <strong>Mapúa Malayan Colleges Mindanao</strong>. Through rigorous coursework and practical projects, I am building a strong foundation in computational theory, asset creation, and interactive media design.</p>
+            </div>
+            <div class="academics-image">
+                <div class="photo-placeholder">Academic Photo Here</div> 
+            </div>
         </section>
 
-        <section class="task2">
-            <h2 class="ht2">Learn You Node</h2>
-            <ul>
-                <li><a href="https://github.com/AngraAltair/M2_Tarquini_Learnyounode">M2_Tarquini_Learnyounode</a></li>
-            </ul>
+        <!-- PROJECTS SECTION -->
+        <section class="projects-section">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1: H.A.K.I. -->
+                <div class="project-card">
+                    <h3>H.A.K.I. Animal Doctors IMS</h3>
+                    <p class="project-role">Project Manager & Front-End Developer</p>
+                    <p class="project-desc">An Inventory and Delivery Management System designed for veterinary branches to streamline delivery workflows and communication between branches and the central office.</p>
+                    <details>
+                        <summary>View Wireframes</summary>
+                        <div class="wireframe-gallery">
+                            <img src="login.jpg" alt="Login Page">
+                            <img src="hrDb.jpg" alt="HR Dashboard">
+                            <img src="employeeDb.jpg" alt="Employee Dashboard">
+                        </div>
+                    </details>
+                    <a href="https://github.com/ALBesana/H.A.K.I.-Animal-Doctors-IMS" target="_blank" class="project-link">View GitHub Project →</a>
+                </div>
+
+                <!-- Project 2: Starbleu -->
+                <div class="project-card">
+                    <h3>Starbleu: Rhythmic Journey</h3>
+                    <p class="project-role">Game Designer, 2D Artist & Audio/Music Composer</p>
+                    <p class="project-desc">Description pending.</p>
+                    <a href="#" class="project-link disabled">Link Pending</a>
+                </div>
+
+                <!-- Project 3: Dayag -->
+                <div class="project-card">
+                    <h3>Dayag</h3>
+                    <p class="project-role">Game Designer, Concept Maker, 3D & SFX Artist</p>
+                    <p class="project-desc">Description pending.</p>
+                    <a href="#" class="project-link disabled">Link Pending</a>
+                </div>
+
+                <!-- Project 4: ReColor -->
+                <div class="project-card">
+                    <h3>ReColor</h3>
+                    <p class="project-role">Game Designer & Audio/Music Composer</p>
+                    <p class="project-desc">Description pending.</p>
+                    <a href="#" class="project-link disabled">Link Pending</a>
+                </div>
+
+            </div>
         </section>
 
-        <section class="task3">
-            <h3>H.A.K.I.-Animal-Doctors-IMS</h3>
-            <p>
-                The web application is an Inventory and Delivery Management System designed for a veterinary
-                deliveries, and streamline communication between branches and the central office.
-            </p>
-            <br>
-            <p>Framework:</p>
-            <details>
-                <summary>View Wireframes</summary>
-                <ul>
-                    <p>Login:</p>
-                    <img src="login.jpg" alt="Login Page" class="section-image">
-                    <br>
-                    <p>HR Dashboard:</p>
-                    <img src="hrDb.jpg" alt="HR Dashboard" class="section-image">
-                    <br>
-                    <p>Employee Dashboard:</p>
-                    <img src="employeeDb.jpg" alt="Employee Dashboard" class="section-image">
-                    <br>
-                    <p>Add Request:</p>
-                    <img src="addReq.jpg" alt="Add Request" class="section-image">
-                    <br>
-                    <p>Pending Approval:</p>
-                    <img src="pendingAp.jpg" alt="Pending Approval" class="section-image">
-                    <br>
-                    <p>View Pending Approval:</p>
-                    <img src="viewPendingAp.jpg" alt="View Pending Approval" class="section-image">
-                    <br>
-                    <p>Delivery:</p>
-                    <img src="delivery.jpg" alt="Delivery" class="section-image">
-                    <br>
-                    <p>Product Stock:</p>
-                    <img src="productStock.jpg" alt="Product Stock" class="section-image">
-                    <br>
-                    <p>Transaction History:</p>
-                    <img src="transactionHistory.jpg" alt="Transaction History" class="section-image">
-                    <br>
-                </ul>
-            </details>
-            <ul>
-                <li><a href="https://github.com/ALBesana/H.A.K.I.-Animal-Doctors-IMS">H.A.K.I.-Animal-Doctors-IMS Github Link</a></li>
-            </ul>
+        <!-- TRAININGS & CERTIFICATIONS SECTION -->
+        <section class="certifications-section">
+            <h2>Trainings & Credentials</h2>
+            <div class="cert-list">
+                
+                <div class="cert-item">
+                    <h4>Microsoft Excel (2019) Associate</h4>
+                    <span class="cert-vendor">Certiport</span>
+                    <a href="Certiport.png" target="_blank" class="cert-link">View Certificate</a>
+                </div>
+
+                <div class="cert-item">
+                    <h4>Java 8 Essential Training</h4>
+                    <span class="cert-vendor">LinkedIn Learning</span>
+                    <a href="https://www.linkedin.com/learning/certificates/b4fe68caa1cf2111c4026a9f7f7c48542236e06d101242df6db1714cdb73e4b9" target="_blank" class="cert-link">View Certificate</a>
+                </div>
+
+                <div class="cert-item">
+                    <h4>Start the UX Design Process: Empathize, Define, and Ideate</h4>
+                    <span class="cert-vendor">Google via Coursera</span>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/8HE4DZ4HXHAW" target="_blank" class="cert-link">View Certificate</a>
+                </div>
+
+                <div class="cert-item">
+                    <h4>Game Design and Development 2: 2D Platformer</h4>
+                    <span class="cert-vendor">Michigan State University via Coursera</span>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/E8J7MG7INXG4" target="_blank" class="cert-link">View Certificate</a>
+                </div>
+
+                <div class="cert-item">
+                    <h4>Games without Chance: Combinatorial Game Theory</h4>
+                    <span class="cert-vendor">Georgia Institute of Technology via Coursera</span>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/7H27G51XOPG9" target="_blank" class="cert-link">View Certificate</a>
+                </div>
+
+                <div class="cert-item">
+                    <h4>Game Design and Development 1: 2D Shooter</h4>
+                    <span class="cert-vendor">Michigan State University via Coursera</span>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/HAK9SL6MZ3TA" target="_blank" class="cert-link">View Certificate</a>
+                </div>
+
+                <div class="cert-item">
+                    <h4>Project Management: Beyond planning and control</h4>
+                    <span class="cert-vendor">Politecnico di Milano via Coursera</span>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/1NKSNMAW6IDN" target="_blank" class="cert-link">View Certificate</a>
+                </div>
+
+                <div class="cert-item">
+                    <h4>Introduction to Game Design</h4>
+                    <span class="cert-vendor">Epic Games via Coursera</span>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/7YA81614O8KL" target="_blank" class="cert-link">View Certificate</a>
+                </div>
+
+                <div class="cert-item">
+                    <h4>Project Management: Life cycle and project planning</h4>
+                    <span class="cert-vendor">Politecnico di Milano via Coursera</span>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/KAR7XV46IAQQ" target="_blank" class="cert-link">View Certificate</a>
+                </div>
+
+            </div>
         </section>
 
-        <section class="task2">
-            <h2>Awards</h2>
-            <ul>
-                <li><a href="Certiport.png">Excel 2019 Associate</a></li><br>
-                <li><a href="https://www.linkedin.com/learning/certificates/b4fe68caa1cf2111c4026a9f7f7c48542236e06d101242df6db1714cdb73e4b9#java.%20Code%20Challenges%20provided%20by%20CoderPad.%20linkedin.com/company/coderpad/trk=cc_learning">Java 8 Essential Training</a></li><br>
-                <li><a href="https://www.coursera.org/account/accomplishments/certificate/8HE4DZ4HXHAW">Start the UX Design Process: Empathize, Define, and Ideate 2024 Certificate</a></li><br>
-                <li><a href="https://www.coursera.org/account/accomplishments/certificate/E8J7MG7INXG4">Game Design and Development 2: 2D Platformer</a></li><br>
-                <li><a href="codechum.jpg">CODECHUM - IT103.A224.2T.24.25 - Completion Certificate</a></li>
-            </ul>
-        </section>
-        <br>
-        <section class="ftr">
+        <!-- FOOTER -->
         <footer>
-            <p> Sherwin John V. Tarquini Portfolio </p>
+            <p>© 2026 Sherwin John V. Tarquini. All Rights Reserved.</p>
         </footer>
-        </section>
+
     </div>
 
     <script src="script.js"></script>

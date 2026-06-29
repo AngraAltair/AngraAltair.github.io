@@ -1,163 +1,285 @@
+/* ==========================================================================
+   1. GLOBAL STYLES & BACKGROUND (Restoring your original look)
+   ========================================================================== */
 body {
   background: url("background.jpg") no-repeat center center fixed;
   background-size: cover;
-  color: white;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  text-align: center;
-}
-
-.main {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.5);
+  color: white; /* Restored all default text to white */
+  font-family: Georgia, 'Times New Roman', Times, serif; /* Restored original font */
+  margin: 0;
+  padding: 40px 20px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-.front {
-  max-width: 1600px;
-  margin: auto;
+/* Centered main container wrapper built using your classic background overlay */
+.portfolio-container {
+  max-width: 900px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.65); /* Restored your original front overlay transparency */
   padding: 40px;
-  background: rgba(0, 0, 0, 0.6);
+  border-radius: 24px;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* All heading text elements forced back to white color */
+h1, h2, h3, h4, p, span {
   color: white;
-  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
-  display: inline-block;
 }
 
-.front img {
-  width: 150px;
-  height: auto;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-}
-
-h1 {
-  font-size: 28px;
-  margin-bottom: 10px;
+.welcome-msg {
+  text-align: center;
   font-size: 30px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  color: white;
-}
-
-h2 {
-  text-align: left;
-}
-
-.ht2 {
-  text-align: right;
+  margin-bottom: 5px;
 }
 
 #greeting {
+  text-align: center;
   font-size: 22px;
-  margin-top: 10px;
   font-weight: bold;
-  color: white;
   text-shadow: 1px 1px 4px rgba(0, 24, 39, 0.8);
+  margin-bottom: 30px;
 }
 
-.task {
-  background: rgba(0, 25, 45, 0.6);
-  padding: 15px;
-  margin: 10px;
-  font-size: 30px;
-  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
-  width: 80%;
-  box-sizing: border-box;
+/* ==========================================================================
+   2. RAPHAEL'S STRUCTURAL LAYOUT (Remapped to your dark colors)
+   ========================================================================== */
+
+/* Two-Column Intro Grid Layout */
+.profile-container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
-.task2 {
-  background: rgba(0, 25, 45, 0.6);
-  padding: 15px;
-  margin: 10px;
-  margin-left: 290px;
-  font-size: 30px;
-  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
-  width: 80%;
-  box-sizing: border-box;
+.profile-left {
+  flex: 1;
+  text-align: center;
 }
 
-.task3 {
-  background: rgba(0, 25, 45, 0.6);
-  padding: 15px;
-  margin: 10px;
-  font-size: 30px;
-  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+.profile-img {
+  width: 160px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.profile-right {
+  flex: 2;
+}
+
+.profile-right p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Tool & Language Badges using your deep dark blue tint colors */
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tech-badge, .lang-badge {
+  background: rgba(0, 25, 45, 0.85); /* Restored your deep task blue box tint */
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid rgba(78, 185, 252, 0.3); /* Subtle accent color border */
+}
+
+/* Academics Row Split Layout */
+.academics-section {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: left;
+}
+
+.academics-text {
+  flex: 2;
+}
+
+.academics-text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.academics-image {
+  flex: 1;
+}
+
+.photo-placeholder {
   width: 100%;
+  height: 160px;
+  background: rgba(0, 25, 45, 0.6);
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+
+/* ==========================================================================
+   3. CARDS & GRID LAYOUTS (Using old task box styling rules)
+   ========================================================================== */
+.projects-section {
+  margin-top: 50px;
+  text-align: left;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Project Cards inherit your old task module color codes */
+.project-card {
+  background: rgba(0, 25, 45, 0.65); /* Restored your task box colors */
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
 }
 
+.project-card h3 {
+  margin: 0 0 5px 0;
+  font-size: 22px;
+}
+
+.project-role {
+  font-size: 14px;
+  color: #4eb9fc; /* Kept your distinct light blue color accent */
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+
+.project-desc {
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.9);
+  flex-grow: 1;
+  margin-bottom: 15px;
+}
+
+/* Credentials List Layout Rows */
+.certifications-section {
+  margin-top: 50px;
+  text-align: left;
+}
+
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.cert-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background: rgba(0, 25, 45, 0.65); /* Restored task block color here */
+  border-radius: 12px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cert-item h4 {
+  margin: 0;
+  font-size: 16px;
+  flex: 2;
+}
+
+.cert-vendor {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  flex: 1;
+  text-align: right;
+  padding-right: 20px;
+}
+
+/* ==========================================================================
+   4. LINKS, INTERACTIONS & INTERACTIVE MENUS
+   ========================================================================== */
 a {
   text-decoration: none;
-  color: #4eb9fc;
-  font-size: 18px;
+  color: #4eb9fc; /* Restored original light blue anchor links color */
   font-weight: bold;
   transition: 0.3s;
 }
 
 a:hover {
-  color: #bbe0f7;
+  color: #bbe0f7; /* Restored original hover state tint color */
   text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.6);
 }
 
-.ftr {
-  background: rgba(0, 25, 45, 0.4);
-  padding: 15px;
-  margin: auto;
-  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
-  width: 80%;
-  box-sizing: border-box;
+.project-link.disabled {
+  color: rgba(255, 255, 255, 0.3);
+  cursor: not-allowed;
 }
 
-footer {
-  margin-top: 20px;
-  font-size: 14px;
-  opacity: 0.8;
+.cert-link {
+  background: rgba(78, 185, 252, 0.15);
+  color: #4eb9fc;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 13px;
 }
 
-/* Image styling for task sections */
-.task img, .task2 img, .task3 img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 8px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+.cert-link:hover {
+  background: rgba(187, 224, 247, 0.3);
 }
 
-/* Specific styling for images in the task3 section */
-.task3 img {
-  max-width: 90%;
-}
-
-/* Styling for the details/summary dropdown */
+/* Restored Dropdowns/Accordions text color options */
 details {
-  margin: 10px 0;
+  margin: 15px 0;
   padding: 10px;
-  background: rgba(0, 25, 45, 0.6);
+  background: rgba(0, 15, 30, 0.6);
   border-radius: 8px;
-  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
 }
 
 summary {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   color: #4eb9fc;
   cursor: pointer;
-  padding: 10px;
-  border-radius: 8px;
-  transition: background 0.3s;
 }
 
-summary:hover {
-  background: rgba(0, 25, 45, 0.8);
-}
-
-details img {
+.wireframe-gallery img {
+  width: 100%;
   max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 10px auto;
+  margin-top: 10px;
   border-radius: 8px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ==========================================================================
+   5. FOOTER RESET
+   ========================================================================== */
+footer {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
 }
