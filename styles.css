@@ -264,6 +264,18 @@ summary {
   cursor: pointer;
 }
 
+/* New style to tame the standalone game preview images */
+.game-preview-img {
+  width: auto;
+  max-width: 180px; /* Restricts the width so it doesn't blow up the card */
+  height: 110px;    /* Keeps the height uniform across all cards */
+  object-fit: cover; /* Prevents the image from stretching weirdly */
+  margin: 10px 0 15px 0;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  align-self: flex-start; /* Keeps them neatly aligned to the left */
+}
+
 .wireframe-gallery img {
   width: 100%;
   max-width: 100%;
